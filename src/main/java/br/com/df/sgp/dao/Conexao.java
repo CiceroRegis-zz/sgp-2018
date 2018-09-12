@@ -45,9 +45,9 @@ public class Conexao {
 	private static String url = "jdbc:postgresql://ec2-54-83-29-34.compute-1.amazonaws.com:5432/dbrvdb02kmbg1e?sslmode=require";
  */
 	private static String driver = "org.postgresql.Driver";
-	private static String usuario = "jgdsixbpfnyyde";
-	private static String senha = "962f52e81c9cf7c1c0218868c263aa7d90b484da3ae8691f0caa22b25850c4a4";
-	private static String url = "jdbc:postgresql://ec2-54-83-29-34.compute-1.amazonaws.com:5432/dbrvdb02kmbg1e?sslmode=require";
+	private static String usuario = "smencbxtaomwwg";
+	private static String senha = "b16e9cb9b819135d8c785661dd965ba5226f4aa9f0881c1620e3ee52ada09c9b";
+	private static String url = "jdbc:postgresql://ec2-174-129-32-37.compute-1.amazonaws.com:5432/df0iss8ve5mhae?sslmode=require";
 	
 	public static  Connection getConnection() throws SQLException{
 		//Context ctx = null;
