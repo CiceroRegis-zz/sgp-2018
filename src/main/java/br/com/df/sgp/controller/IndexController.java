@@ -120,7 +120,7 @@ public class IndexController implements Serializable{
 	        
 		 java.io.InputStream reportStream =  facesContext.getExternalContext().getResourceAsStream("/pages/reports/report1.jasper");
 		response.setContentType("pages/reports");
-		response.setHeader("Content-disposition", "inline;filename=Pesquisa_Eleições_2018.pdf");
+		response.setHeader("Content-disposition", "inline;filename=Pesquisa_Eleições_DF_2018.pdf");
 			
 		try {
             ServletOutputStream servletOutputStream = response.getOutputStream();
