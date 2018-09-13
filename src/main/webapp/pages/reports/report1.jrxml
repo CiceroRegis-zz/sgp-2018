@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty" isIgnorePagination="true" uuid="f9b5e5b8-7ab2-4552-ac66-385b42179add">
 	<property name="ireport.zoom" value="1.239669421487604"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="1042"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -158,36 +158,48 @@ ________________________________________________________________________________
 		<groupFooter>
 			<band height="471">
 				<staticText>
-					<reportElement x="14" y="0" width="535" height="61" uuid="76159f93-ea7b-4943-bf03-5a1b857be994"/>
+					<reportElement x="14" y="0" width="535" height="82" uuid="76159f93-ea7b-4943-bf03-5a1b857be994"/>
 					<text><![CDATA[Saúde: ________________________________________________________________________________________________
 
 ________________________________________________________________________________________________]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="14" y="61" width="535" height="61" uuid="14e353c0-99ff-41bd-9e0c-8e766418c3cf"/>
+					<reportElement x="15" y="82" width="535" height="63" uuid="14e353c0-99ff-41bd-9e0c-8e766418c3cf"/>
 					<text><![CDATA[Transporte: ________________________________________________________________________________________________
 
 ________________________________________________________________________________________________]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="16" y="122" width="535" height="61" uuid="51420f0d-7916-41d6-acd9-334ec3a417e3"/>
+					<reportElement x="14" y="145" width="535" height="62" uuid="51420f0d-7916-41d6-acd9-334ec3a417e3"/>
 					<text><![CDATA[Seguraça: ________________________________________________________________________________________________
 
 ________________________________________________________________________________________________]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="15" y="183" width="535" height="28" uuid="9b064c8e-dcb8-4150-828f-3164dd1cffef"/>
+					<reportElement x="16" y="207" width="535" height="28" uuid="9b064c8e-dcb8-4150-828f-3164dd1cffef"/>
 					<text><![CDATA[Grandes Empresas tais como:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="16" y="211" width="535" height="61" uuid="17837bdc-3c4a-47aa-9ef9-b03826c06869"/>
+					<reportElement x="15" y="235" width="535" height="41" uuid="17837bdc-3c4a-47aa-9ef9-b03826c06869"/>
 					<text><![CDATA[Shoppings: ________________________________________________________________________________________________
 
 ________________________________________________________________________________________________]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="16" y="272" width="535" height="61" uuid="2628bdec-19b5-4eb9-9ad5-6b4038c83503"/>
+					<reportElement x="16" y="276" width="533" height="36" uuid="2628bdec-19b5-4eb9-9ad5-6b4038c83503"/>
 					<text><![CDATA[Supermercados: ________________________________________________________________________________________________
+
+________________________________________________________________________________________________]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="15" y="312" width="535" height="29" uuid="ff59ff27-a49e-49eb-aac2-a99a77f105f3"/>
+					<text><![CDATA[PACS: ________________________________________________________________________________________________
+
+_________________________________________________________________________________________________]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="16" y="341" width="535" height="44" uuid="2a839df0-9d18-4991-ac5c-1a925379f961"/>
+					<text><![CDATA[Outros: ________________________________________________________________________________________________
 
 ________________________________________________________________________________________________]]></text>
 				</staticText>
