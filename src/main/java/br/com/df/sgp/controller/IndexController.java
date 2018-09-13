@@ -109,6 +109,11 @@ public class IndexController implements Serializable{
 		}		
 	}
 	
+	
+	/**
+	 * Formulario de pesquisa do cantidato 
+	 *autor:Cícero Régis
+	 */
 	public void imprimirFormulario() {
 		 FacesContext facesContext = FacesContext.getCurrentInstance();
 	        HttpServletResponse response = (HttpServletResponse) facesContext.getExternalContext().getResponse();
