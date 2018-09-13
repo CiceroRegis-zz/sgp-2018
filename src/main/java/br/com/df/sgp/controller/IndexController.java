@@ -111,7 +111,7 @@ public class IndexController implements Serializable{
 	
 	
 	/**
-	 * Formulario de pesquisa do cantidato 
+	 * Formulario de pesquisa do cantidato 2018
 	 *autor:Cícero Régis
 	 */
 	public void imprimirFormulario() {
