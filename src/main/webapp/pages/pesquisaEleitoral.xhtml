@@ -81,7 +81,7 @@
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
 										<f:selectItems
-											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" />
+											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" itemLabel="#{c.nome} #{c.siglaPartido}" itemValue="#{c}"/>
 									</p:selectOneMenu>
 
 								</div>					  
