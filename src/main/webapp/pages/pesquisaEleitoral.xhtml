@@ -74,8 +74,17 @@
 							<h2>Pesquisa Espontanêa</h2>
 							</center>
 							<div class="form-group"  >
-								<p:outputLabel for="p1"  panelStyle="width: 260px;">1- Em quem o Senhor(a) votaria para Governador de Brasília em 2018?</p:outputLabel>
-							<p:inputText id="p1" styleClass="form-control"   readonly="true" />						  
+								<p:outputLabel  panelStyle="width: 260px;">1- Em quem o Senhor(a) votaria para Governador de Brasília em 2018?</p:outputLabel>
+							 <div class="form-group">
+									<p:outputLabel for="candidatoG"></p:outputLabel>
+									<p:selectOneMenu id="candidatoG" filter="true" filterMatchMode="startsWith"
+										value="#{candidatowebService.candidato}">
+										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
+										<f:selectItems
+											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" />
+									</p:selectOneMenu>
+
+								</div>					  
 								
 							</div>
 							<div class="form-group">
@@ -84,8 +93,17 @@
 							 </div>
 							
 							<div class="form-group">
-							<p:outputLabel for="p2">2 - Em quem o Senhor(a) votaria para Deputado Distrital?</p:outputLabel>
-							 <p:inputText id="p2" styleClass="form-control"  readonly="true"/>
+							<p:outputLabel>2 - Em quem o Senhor(a) votaria para Deputado Distrital?</p:outputLabel>
+								<div class="form-group">
+									<p:outputLabel for="candidatoD"></p:outputLabel>
+									<p:selectOneMenu id="candidatoD" filter="true" filterMatchMode="startsWith"
+										value="#{candidatowebService.candidato}">
+										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
+										<f:selectItems
+											value="#{candidatowebService.listaCandidatosDistrital()}" var="c" />
+									</p:selectOneMenu>
+
+								</div>
 							</div>
 							
 							<div class="form-group">
@@ -94,8 +112,17 @@
 							 </div>
 							 
 							 <div class="form-group">
-							<p:outputLabel for="p3">3 - Em quem o Senhor(a) votaria para Deputado Federal?</p:outputLabel>
-							  <p:inputText id="p3" styleClass="form-control"   readonly="true" />						  
+							<p:outputLabel >3 - Em quem o Senhor(a) votaria para Deputado Federal?</p:outputLabel>
+							  <div class="form-group">
+									<p:outputLabel for="candidatoF"></p:outputLabel>
+									<p:selectOneMenu id="candidatoF" filter="true" filterMatchMode="startsWith"
+										value="#{candidatowebService.candidato}">
+										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
+										<f:selectItems
+											value="#{candidatowebService.listaCandidatosFederal()}" var="c" />
+									</p:selectOneMenu>
+
+								</div>						  
 
 							</div>
 							
@@ -107,9 +134,16 @@
 							 
 							 
 							 <div class="form-group">
-							<p:outputLabel for="p4">4 - Em quem o Senhor(a) votaria para Deputado Senador?</p:outputLabel>
-							<p:inputText id="p4" styleClass="form-control"  readonly="true" />						  
-							
+							<p:outputLabel>4 - Em quem o Senhor(a) votaria para Deputado Senador?</p:outputLabel>
+							<div class="form-group">
+									<p:outputLabel for="candidatoS"></p:outputLabel>
+									<p:selectOneMenu id="candidatoS" filter="true" filterMatchMode="startsWith"
+										value="#{candidatowebService.candidato}">
+										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
+										<f:selectItems
+											value="#{candidatowebService.listaCandidatosSenador()}" var="c" />
+									</p:selectOneMenu>
+								</div>							  
 							</div>
 							
 							<div class="form-group">

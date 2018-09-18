@@ -9,17 +9,15 @@
 	<ui:define name="content">
 	<header class="page-header">
       </header>
-      <h:outputText value="#{candidatowebService.listar}" />
       
-     <!--  <div class="form-group">
-      	
+       <div class="form-group">
       		<p:outputLabel for="candidato"> Candidatos</p:outputLabel>
       		<p:selectOneMenu id="candidato" value="#{candidatowebService.candidato}">
       			<f:selectItem itemLabel="Selecione" itemValue=""/>
-      			<f:selectItems value="#{candidatowebService.listar}" var="c" itemLabel="#{c.nome}" itemValue="#{c.id}"/>
+      			<f:selectItems value="#{candidatowebService.listaCandidatos()}" var="c"  />
       		</p:selectOneMenu>
       	
-      </div> -->
+      </div> 
       
 	</ui:define>
 </ui:composition>
