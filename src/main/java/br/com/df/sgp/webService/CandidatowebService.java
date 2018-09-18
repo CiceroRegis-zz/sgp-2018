@@ -35,7 +35,7 @@ public class CandidatowebService {
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
 				String[] list = str.split("[;]");
-				String filds  = list[0].toString();
+				String filds  = list[0].trim();
 				List<String>  governadores = nomes.get(filds);
 				if(governadores == null) {
 					governadores = new ArrayList<>();
