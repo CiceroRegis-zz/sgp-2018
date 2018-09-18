@@ -20,72 +20,73 @@ public class CandidatowebService {
 
 	Candidato candidato = new Candidato();
 
-	List<Candidato> candidatos = new ArrayList<>();
+	List<Candidato> candidatosGovernador = new ArrayList<>();
 	
 	public List<Candidato> listaCandidatosGovernador(){
 		
-		candidatos = new ArrayList<>();
+		candidatosGovernador = new ArrayList<>();
 		
-		candidatos.add(new Candidato("ALBERTO FRAGA	","DEM	"));
-		candidatos.add(new Candidato("IBANEIS","DEM	"));
-		candidatos.add(new Candidato("ALEXANDRE GUERRA	","NOVO	"));
-		candidatos.add(new Candidato("RENAN ROSA ","PCO"));
-		candidatos.add(new Candidato("ELIANA PEDROSA ","PROS"));
-		candidatos.add(new Candidato("GENERAL PAULO CHAGAS ","PRP"));
-		candidatos.add(new Candidato("RODRIGO ROLLEMBERG","	PSB"));
-		candidatos.add(new Candidato("ROGÉRIO ROSSO","PSD"));
-		candidatos.add(new Candidato("FÁTIMA SOUSA","PSOL"));
-		candidatos.add(new Candidato("GUILLEN","PSTU"));
-		candidatos.add(new Candidato("JÚLIO MIRAGAYA","PT"));
-		return candidatos;
+		candidatosGovernador.add(new Candidato("ALBERTO FRAGA	","DEM	"));
+		candidatosGovernador.add(new Candidato("IBANEIS","DEM	"));
+		candidatosGovernador.add(new Candidato("ALEXANDRE GUERRA	","NOVO	"));
+		candidatosGovernador.add(new Candidato("RENAN ROSA ","PCO"));
+		candidatosGovernador.add(new Candidato("ELIANA PEDROSA ","PROS"));
+		candidatosGovernador.add(new Candidato("GENERAL PAULO CHAGAS ","PRP"));
+		candidatosGovernador.add(new Candidato("RODRIGO ROLLEMBERG","	PSB"));
+		candidatosGovernador.add(new Candidato("ROGÉRIO ROSSO","PSD"));
+		candidatosGovernador.add(new Candidato("FÁTIMA SOUSA","PSOL"));
+		candidatosGovernador.add(new Candidato("GUILLEN","PSTU"));
+		candidatosGovernador.add(new Candidato("JÚLIO MIRAGAYA","PT"));
+		return candidatosGovernador;
 	}
 	
 	
 	public List<Candidato> listaCandidatosDristrital(){
+		List<Candidato> candidatosDistrital = new ArrayList<>();
 		
-		candidatos.add(new Candidato("ADRIANA GLORIA	","AVANTE"));
-		candidatos.add(new Candidato("AKILLA MARINHO	","AVANTE"));
-		candidatos.add(new Candidato("ALFREDO JUNIOR	","AVANTE"));
-		candidatos.add(new Candidato("ANGELA TEIXEIRA	","AVANTE"));
-		candidatos.add(new Candidato("ARTHUR CARDOSO	","AVANTE"));
-		candidatos.add(new Candidato("BILL SAÚDE	    ","AVANTE"));
-		candidatos.add(new Candidato("BISMARCK UBER, CABIFY E 99	","AVANTE"));
-		candidatos.add(new Candidato("BOLIVAR ROCHA	","AVANTE"));
-		candidatos.add(new Candidato("CAMARGO","AVANTE"));
-		candidatos.add(new Candidato("CAROL DOS ANIMAIS	","AVANTE"));
-		candidatos.add(new Candidato("CORREA LEÃO DE JUDÁ	","AVANTE"));
-		candidatos.add(new Candidato("CRISTIA LIMA	","AVANTE"));
-		candidatos.add(new Candidato("DELEGADO MAURO CEZAR	","AVANTE"));
-		candidatos.add(new Candidato("DRA. JANE	","AVANTE"));
-		candidatos.add(new Candidato("DR. CARLOS	","AVANTE"));
-		candidatos.add(new Candidato("DR. ROBERTO LUCENA	","AVANTE"));
-		candidatos.add(new Candidato("FLÁVIO CARDOSO	","AVANTE"));
-		candidatos.add(new Candidato("GABI DA JUVENTUDE","AVANTE"));
-		candidatos.add(new Candidato("GEORGIA QUARTIN	","AVANTE"));
-		candidatos.add(new Candidato("GORDINHO DA FARMÁCIA	","AVANTE"));
-		candidatos.add(new Candidato("ISAURA BARBOSA	","AVANTE"));
-		candidatos.add(new Candidato("JOAO CARDOSO PROFESSOR-AUDITOR	","AVANTE"));
-		candidatos.add(new Candidato("KLEYSON MORENO	","AVANTE"));
-		candidatos.add(new Candidato("KYARA ZARUTY LGBTI	","AVANTE"));
-		candidatos.add(new Candidato("LULO SENA	","AVANTE"));
-		candidatos.add(new Candidato("MAICON MIRANDA	","AVANTE"));
-		candidatos.add(new Candidato("MAJOR LOURIVAL	","AVANTE"));
-		candidatos.add(new Candidato("MARCOS MAURÍCIO	","AVANTE"));
-		candidatos.add(new Candidato("MC BANDIDA	","AVANTE"));
-		candidatos.add(new Candidato("MILENE DA CEILÂDIA	","AVANTE"));
-		candidatos.add(new Candidato("NERY DO BRASIL	","AVANTE"));
-		candidatos.add(new Candidato("PAULA ALVES PSICOPEDAGOGA	","AVANTE"));
-		candidatos.add(new Candidato("PR. CÉLIO SANTANA	","AVANTE"));
-		candidatos.add(new Candidato("PROF. DIEGO MATOS DA FERCAL	","AVANTE"));
-		candidatos.add(new Candidato("PROFESSOR NIVALDO	","AVANTE"));
-		candidatos.add(new Candidato("PROF. IRAN LIMA	","AVANTE"));
-		candidatos.add(new Candidato("PROF. SEVERINO CAJAZEIRAS	","AVANTE"));
-		candidatos.add(new Candidato("RAFAEL MOREIRA	","AVANTE"));
-		candidatos.add(new Candidato("REGINALDO SARDINHA	","AVANTE"));
-		candidatos.add(new Candidato("","AVANTE"));
+		candidatosDistrital.add(new Candidato("ADRIANA GLORIA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("AKILLA MARINHO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("ALFREDO JUNIOR	","AVANTE"));
+		candidatosDistrital.add(new Candidato("ANGELA TEIXEIRA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("ARTHUR CARDOSO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("BILL SAÚDE	    ","AVANTE"));
+		candidatosDistrital.add(new Candidato("BISMARCK UBER, CABIFY E 99	","AVANTE"));
+		candidatosDistrital.add(new Candidato("BOLIVAR ROCHA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("CAMARGO","AVANTE"));
+		candidatosDistrital.add(new Candidato("CAROL DOS ANIMAIS	","AVANTE"));
+		candidatosDistrital.add(new Candidato("CORREA LEÃO DE JUDÁ	","AVANTE"));
+		candidatosDistrital.add(new Candidato("CRISTIA LIMA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("DELEGADO MAURO CEZAR	","AVANTE"));
+		candidatosDistrital.add(new Candidato("DRA. JANE	","AVANTE"));
+		candidatosDistrital.add(new Candidato("DR. CARLOS	","AVANTE"));
+		candidatosDistrital.add(new Candidato("DR. ROBERTO LUCENA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("FLÁVIO CARDOSO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("GABI DA JUVENTUDE","AVANTE"));
+		candidatosDistrital.add(new Candidato("GEORGIA QUARTIN	","AVANTE"));
+		candidatosDistrital.add(new Candidato("GORDINHO DA FARMÁCIA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("ISAURA BARBOSA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("JOAO CARDOSO PROFESSOR-AUDITOR	","AVANTE"));
+		candidatosDistrital.add(new Candidato("KLEYSON MORENO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("KYARA ZARUTY LGBTI	","AVANTE"));
+		candidatosDistrital.add(new Candidato("LULO SENA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("MAICON MIRANDA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("MAJOR LOURIVAL	","AVANTE"));
+		candidatosDistrital.add(new Candidato("MARCOS MAURÍCIO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("MC BANDIDA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("MILENE DA CEILÂDIA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("NERY DO BRASIL	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PAULA ALVES PSICOPEDAGOGA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PR. CÉLIO SANTANA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PROF. DIEGO MATOS DA FERCAL	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PROFESSOR NIVALDO	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PROF. IRAN LIMA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("PROF. SEVERINO CAJAZEIRAS	","AVANTE"));
+		candidatosDistrital.add(new Candidato("RAFAEL MOREIRA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("REGINALDO SARDINHA	","AVANTE"));
+		candidatosDistrital.add(new Candidato("","AVANTE"));
 		
 		
-		return candidatos;
+		return candidatosDistrital;
 		
 	}
 	
