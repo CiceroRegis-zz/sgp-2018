@@ -13,6 +13,12 @@ import javax.faces.bean.ManagedBean;
 
 import br.com.df.sgp.model.Candidato;
 
+/***
+ * 
+ * @author cicer
+ *
+ */
+
 @ManagedBean
 @ApplicationScoped
 public class CandidatowebService {
