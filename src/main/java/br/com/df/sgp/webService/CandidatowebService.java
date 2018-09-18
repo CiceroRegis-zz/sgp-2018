@@ -31,12 +31,12 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosGovernador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.xls";
+		String path = "/pages/csv/Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.xls";
 		String str = "";
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
-				String[] list = str.split("\\;");
-				String filds  = list[0].trim();
+				String[] list = str.split("[;]");
+				String filds  = list[0].toString();
 				List<String>  governadores = nomes.get(filds);
 				if(governadores == null) {
 					governadores = new ArrayList<>();
@@ -63,7 +63,7 @@ public class CandidatowebService {
 		try (BufferedReader read = new BufferedReader(new FileReader(path));) {
 			while ((str = read.readLine()) != null) {
 				String[] list = str.split("[;]");
-				String filds = list[0].trim();
+				String filds = list[0].toString();
 				List<String> distritais = nomes.get(filds);
 				if (distritais == null) {
 					distritais = new ArrayList<>();
@@ -90,7 +90,7 @@ public class CandidatowebService {
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
 				String[] list = str.split("[;]");
-				String filds  = list[0].trim();
+				String filds  = list[0].toString();
 				List<String>  federais = nomes.get(filds);
 				if(federais == null) {
 					federais = new ArrayList<>();
@@ -115,7 +115,7 @@ public class CandidatowebService {
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
 				String[] list = str.split("[;]");
-				String filds  = list[0].trim();
+				String filds  = list[0].toString();
 				List<String>  senadores = nomes.get(filds);
 				if(senadores == null) {
 					senadores = new ArrayList<>();
