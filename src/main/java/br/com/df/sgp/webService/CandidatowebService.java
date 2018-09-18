@@ -2,7 +2,6 @@ package br.com.df.sgp.webService;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -31,7 +30,7 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosGovernador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		String path = "/pages/csv/Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.xls";
+		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Governador.xls";
 		String str = "";
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
@@ -80,8 +79,8 @@ public class CandidatowebService {
 
 	}
 
-	
-	public Map<String, List<String>> listaCandidatosFederal(){
+	*/
+	/*public Map<String, List<String>> listaCandidatosFederal(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
 		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Deputado Federal-DISTRITO FEDERAL-2018.xls";
