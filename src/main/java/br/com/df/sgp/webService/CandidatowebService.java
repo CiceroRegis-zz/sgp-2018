@@ -26,18 +26,17 @@ public class CandidatowebService {
 	Candidato candidato = new Candidato();
 
 	List<Candidato> candidatos = new ArrayList<>();
-
+	
 	
 	public Map<String, List<String>> listaCandidatosGovernador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
 		//String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.csv";
-		String path = "/sgp-2018/src/main/webapp/pages/Lista-Candidatos-Deputado Distrital-DISTRITO FEDERAL-2018.csv";
 		String str = "";
-		
+		String path = "/pages/csv/Lista-Candidatos-Deputado Distrital-DISTRITO FEDERAL-2018.csv";
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
-				String[] list = str.split("[;]");
+				String[] list = str.split("\\;");
 				String filds  = list[0].trim();
 				List<String>  governadores = nomes.get(filds);
 				if(governadores == null) {
@@ -59,7 +58,7 @@ public class CandidatowebService {
 
 		Map<String, List<String>> nomes = new TreeMap<>();
 
-		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\Lista-Candidatos-Deputado Distrital-DISTRITO FEDERAL-2018.csv";
+		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Deputado Distrital-DISTRITO FEDERAL-2018.csv";
 		String str = "";
 
 		try (BufferedReader read = new BufferedReader(new FileReader(path));) {
@@ -87,7 +86,7 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosFederal(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\Lista-Candidatos-Deputado Federal-DISTRITO FEDERAL-2018.csv";
+		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Deputado Federal-DISTRITO FEDERAL-2018.csv";
 		String str = "";
 		
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
@@ -112,7 +111,7 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosSenador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\Lista-Candidatos-Senador-DISTRITO FEDERAL-2018.csv";
+		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Senador-DISTRITO FEDERAL-2018.csv";
 		String str = "";
 		
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
