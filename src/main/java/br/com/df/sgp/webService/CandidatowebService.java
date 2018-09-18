@@ -20,9 +20,9 @@ public class CandidatowebService {
 
 	Candidato candidato = new Candidato();
 
-	List<Candidato> candidatosGovernador = new ArrayList<>();
 	
 	public List<Candidato> listaCandidatosGovernador(){
+		List<Candidato> candidatosGovernador = new ArrayList<>();
 		
 		candidatosGovernador = new ArrayList<>();
 		
@@ -98,12 +98,5 @@ public class CandidatowebService {
 		this.candidato = candidato;
 	}
 
-	public List<Candidato> getCandidatos() {
-		return candidatos;
-	}
-
-	public void setCandidatos(List<Candidato> candidatos) {
-		this.candidatos = candidatos;
-	}
 
 }
