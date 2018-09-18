@@ -31,7 +31,7 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosGovernador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.csv";
+		String path = "/sgp-2018/src/main/webapp/pages/csv/Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.csv";
 		String str = "";
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
