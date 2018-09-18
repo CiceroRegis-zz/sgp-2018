@@ -81,7 +81,7 @@
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
 										<f:selectItems
-											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" />
+											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" itemLabel="#{c.nome} - #{c.siglaPartido}" itemValue="#{c}"/>
 									</p:selectOneMenu>
 
 								</div>					  
@@ -99,7 +99,7 @@
 									<p:selectOneMenu id="candidatoD" filter="true" filterMatchMode="startsWith"
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems 
+										<f:selectItems value="#{candidatowebService.listaCandidatosDristrital()}"
 											 var="c" itemLabel="#{c.nome} - #{c.siglaPartido}" itemValue="#{c}"/>
 									</p:selectOneMenu>
 
