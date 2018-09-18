@@ -53,7 +53,7 @@ public class CandidatowebService {
 	
 	
 	
-	public Map<String, List<String>> listaCandidatosDistrital() {
+	/*public Map<String, List<String>> listaCandidatosDistrital() {
 
 		Map<String, List<String>> nomes = new TreeMap<>();
 
@@ -128,7 +128,7 @@ public class CandidatowebService {
 			// TODO: handle exception
 		}
 		return nomes;
-	}
+	}*/
 	
 	public Candidato getCandidato() {
 		return candidato;
