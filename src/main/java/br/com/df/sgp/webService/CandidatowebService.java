@@ -31,9 +31,8 @@ public class CandidatowebService {
 	public Map<String, List<String>> listaCandidatosGovernador(){
 		Map<String, List<String>> nomes = new TreeMap<>();
 		
-		//String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.csv";
+		String path = "E:\\Dev\\Projetos\\sgp-2018\\src\\main\\webapp\\pages\\csv\\Lista-Candidatos-Governador-DISTRITO FEDERAL-2018.csv";
 		String str = "";
-		String path = "/pages/csv/Lista-Candidatos-Deputado Distrital-DISTRITO FEDERAL-2018.csv";
 		try (BufferedReader read  =  new BufferedReader(new FileReader(path))){
 			while((str = read.readLine()) !=null) {
 				String[] list = str.split("\\;");
@@ -72,7 +71,6 @@ public class CandidatowebService {
 				distritais.add(filds);
 				nomes.put(filds, distritais);
 
-				// System.out.println(k);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
