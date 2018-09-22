@@ -117,7 +117,7 @@
 									<p:selectOneMenu id="candidatoF" filter="true" filterMatchMode="startsWith"
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems value="#{candidatowebService.listaCandidatosFederal()}"	 var="c" />
+										<f:selectItems value="#{candidatowebService.listaCandidatosFederal()}"	  />
 									</p:selectOneMenu>
 
 								</div>						  
@@ -128,8 +128,6 @@
 							    <p:outputLabel for="r3">Por quê?</p:outputLabel>
 							    <p:inputText id="r3" styleClass="form-control"   readonly="true" />						  
 							 </div>
-							 
-							 
 							 
 							 <div class="form-group">
 							<p:outputLabel>4 - Em quem o Senhor(a) votaria para Deputado Senador?</p:outputLabel>
@@ -210,7 +208,7 @@
 							</div>
 							 
 						<center>		    
-						  	<p:commandLink value="Salvar" action="#{pesquisaEleitoralController.salvarPesquisa()}" update=":formMsg:growl" styleClass="btn btn-primary" type="button" />		  	
+						  	<p:commandLink value="Salvar" action="#{pesquisaEleitoralController.salvarPesquisa()}"  styleClass="btn btn-primary" type="button" />		  	
 						</center>
 						</h:form>
 					</div>
