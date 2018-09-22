@@ -3,15 +3,14 @@ package br.com.df.sgp.service;
 
 import br.com.df.sgp.dao.PesquisaEleitoralDAO;
 import br.com.df.sgp.model.Candidato;
-import br.com.df.sgp.model.PesquisaEleitoral;
 
 public class PesquisaEleitoralService {
 
 	private static PesquisaEleitoralDAO pesquisaEleitoralDAO = new PesquisaEleitoralDAO();
 
-	public static boolean salvarPesquisa(PesquisaEleitoral pesquisaEleitoral) {
+	public static boolean salvarPesquisa(Candidato candidato_Distrital) {
 
-		return pesquisaEleitoralDAO.salvarPesquisa(pesquisaEleitoral);
+		return pesquisaEleitoralDAO.salvarCandidato(candidato_Distrital);
 	}
 	
 	

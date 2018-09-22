@@ -22,7 +22,7 @@ public class PesquisaEleitoralController implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Usuario usuarioLogado = new Usuario();
 	private Usuario usuario = new Usuario();
-	private Candidato candidato = new Candidato();
+	private Candidato candidato_Distrital = new Candidato();
 	private PesquisaEleitoral pesquisaEleitoral = new PesquisaEleitoral();
 
 	public String salvarPesquisa() {
@@ -30,13 +30,10 @@ public class PesquisaEleitoralController implements Serializable {
 		this.pesquisaEleitoral.setIdResponsavel(usuarioLogado.getIdResponsavel());
 		//this.candidato.setIdPesquisa(pesquisaEleitoral.getIdPesquisa());
 		//PesquisaEleitoralService.salvarCandidato(this.candidato);
-		PesquisaEleitoralService.salvarPesquisa(this.pesquisaEleitoral);
+		PesquisaEleitoralService.salvarPesquisa(candidato_Distrital);
 		JsfUtil.addInfoMessage(null, "Formulario Salva com Sucesso!");
 		return "/pages/pesquisaEleitoral?faces-redirect=true";
 	}
-	
-	
-	
 	
 	public Usuario getUsuarioLogado() {
 		return usuarioLogado;
@@ -62,12 +59,12 @@ public class PesquisaEleitoralController implements Serializable {
 		this.usuarioLogado = usuarioLogado;
 	}
 
-	public Candidato getCandidato() {
-		return candidato;
+	public Candidato getCandidato_Distrital() {
+		return candidato_Distrital;
 	}
 
-	public void setCandidato(Candidato candidato) {
-		this.candidato = candidato;
+	public void setCandidato_Distrital(Candidato candidato_Distrital) {
+		this.candidato_Distrital = candidato_Distrital;
 	}
 
 }

@@ -33,6 +33,9 @@ public class Candidato {
 		this.siglaPartido = siglaPartido;
 	}
 
-	
+	@Override
+	public String toString() {
+		return String.format("%s[id=%d]", getClass().getSimpleName(), getId());
+	}
 	
 }

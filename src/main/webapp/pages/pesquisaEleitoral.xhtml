@@ -78,10 +78,10 @@
 							 <div class="form-group">
 									<p:outputLabel for="candidatoG"></p:outputLabel>
 									<p:selectOneMenu id="candidatoG" filter="true" filterMatchMode="startsWith"
-										value="#{candidatowebService.candidato}">
+										value="#{candidatowebService.candidato}" >
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems
-											value="#{candidatowebService.listaCandidatosGovernador()}" var="c" itemLabel="#{c.nome} - #{c.siglaPartido}" itemValue="#{c}"/>
+										<f:selectItems immediate="true"
+											value="#{candidatowebService.listaCandidatosGovernador()}"/>
 									</p:selectOneMenu>
 
 								</div>					  
@@ -97,10 +97,9 @@
 								<div class="form-group">
 									<p:outputLabel for="candidatoD"></p:outputLabel>
 									<p:selectOneMenu id="candidatoD" filter="true" filterMatchMode="startsWith"
-										value="#{candidatowebService.candidato}">
+										value="#{candidatowebService.candidato}" >
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems value="#{candidatowebService.listaCandidatosDristrital()}"
-											 var="c" itemLabel="#{c.nome} - #{c.siglaPartido}" itemValue="#{c}"/>
+										<f:selectItems value="#{candidatowebService.listaCandidatosDistrital()}" immediate="true"/>
 									</p:selectOneMenu>
 
 								</div>
@@ -118,8 +117,7 @@
 									<p:selectOneMenu id="candidatoF" filter="true" filterMatchMode="startsWith"
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems
-											 var="c" />
+										<f:selectItems value="#{candidatowebService.listaCandidatosFederal()}"	 var="c" />
 									</p:selectOneMenu>
 
 								</div>						  
@@ -140,8 +138,7 @@
 									<p:selectOneMenu id="candidatoS" filter="true" filterMatchMode="startsWith"
 										value="#{candidatowebService.candidato}">
 										<f:selectItem itemLabel="Selecione um Candidato" itemValue="" />
-										<f:selectItems
-											 var="c" />
+										<f:selectItems value="#{candidatowebService.listaCandidatosSenador()}"	 var="c" />
 									</p:selectOneMenu>
 								</div>							  
 							</div>
@@ -213,7 +210,7 @@
 							</div>
 							 
 						<center>		    
-						  	<p:commandLink value="Salvar" action="#{pesquisaEleitoralController.salvarPesquisa()}" update=":formMsg:growl" styleClass="btn btn-primary" type="button" disabled="true" />		  	
+						  	<p:commandLink value="Salvar" action="#{pesquisaEleitoralController.salvarPesquisa()}" update=":formMsg:growl" styleClass="btn btn-primary" type="button" />		  	
 						</center>
 						</h:form>
 					</div>

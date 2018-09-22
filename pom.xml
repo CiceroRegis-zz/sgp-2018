@@ -216,6 +216,14 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<!-- OmniFaces -->
+			<dependency>
+				<groupId>org.omnifaces</groupId>
+				<artifactId>omnifaces</artifactId>
+				<version>3.2</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<build>
